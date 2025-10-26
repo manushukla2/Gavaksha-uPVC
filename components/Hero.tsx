@@ -34,7 +34,7 @@ export function Hero() {
           >
             {slides.map((src) => (
               <div key={src} className="relative h-full" style={{ width: `${100 / slides.length}%` }}>
-                <Image src={src} alt="Hero background" fill priority sizes="100vw" className="object-cover object-center" />
+                <SlideImage src={src} />
               </div>
             ))}
           </div>
@@ -55,5 +55,21 @@ export function Hero() {
         </div>
       </div>
     </section>
+  )
+}
+
+function SlideImage({ src }: { src: string }) {
+  const [broken, setBroken] = useState(false)
+  const safeSrc = broken ? '/images/placeholder.svg' : src
+  return (
+    <Image
+      src={safeSrc}
+      alt="Hero background"
+      fill
+      priority
+      sizes="100vw"
+      className="object-cover object-center"
+      onError={() => setBroken(true)}
+    />
   )
 }

@@ -8,9 +8,10 @@ export const HERO_IMAGE = "/images/ban1.jpg";
 // A rotating set of images for the homepage hero slider (uses the files you uploaded)
 export const HERO_IMAGES: string[] = [
   "/images/ban1.jpg",
-  "/images/ban2.webp",
+  // Use .jpg as available in public/images to avoid 404s in production
+  "/images/ban2.jpg",
   "/images/ban3.jpg",
-  "/images/ban4.webp",
+  "/images/ban4.jpg",
   "/images/ban5.jpg",
 ];
 
@@ -20,7 +21,8 @@ export const PRODUCT_IMAGES: Record<string, string> = {
   "casement-window": "/images/WhatsApp%20Image%202025-10-26%20at%208.23.06%20AM.jpeg",
   "tilt-turn": "/images/WhatsApp%20Image%202025-10-26%20at%208.23.07%20AM.jpeg",
   // Using the remaining image for French door; feel free to replace with a dedicated French-door photo later
-  "french-door": "/images/WhatsApp%20Image%202025-10-26%20at%208.23.06%20AM%20(1).jpeg",
+  // Encode parentheses for reliable serving on production hosts
+  "french-door": "/images/WhatsApp%20Image%202025-10-26%20at%208.23.06%20AM%20%281%29.jpeg",
   // Reuse the panoramic sliding-door image for the Sliding Door product as well
   "sliding-door": "/images/WhatsApp%20Image%202025-10-26%20at%208.23.12%20AM.jpeg",
 };
