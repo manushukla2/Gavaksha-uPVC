@@ -11,13 +11,13 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <Image
             src="/images/logo.png"
-            alt="Gavaksha uPVC Doors & Windows logo"
+            alt="Gavaksha uPVC Doors & Windows Pvt Ltd. logo"
             width={120}
             height={40}
             priority
             className="h-8 md:h-9 w-auto object-contain"
           />
-          <span>Gavaksha uPVC Doors & Windows</span>
+          <span>Gavaksha uPVC Doors & Windows Pvt Ltd.</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           <Link href="/" className="hover:text-brand-blue">Home</Link>
