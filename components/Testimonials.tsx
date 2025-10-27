@@ -2,15 +2,15 @@ export function Testimonials() {
   const items = [
     {
       quote: 'The acoustic insulation is fantastic. Our apartment is much quieter now.',
-      name: 'Rahul S.',
+      name: 'Rahul Sharma',
     },
     {
       quote: 'Smooth sliding doors and zero drafts—big difference in summer.',
-      name: 'Aparna K.',
+      name: 'Aparna Mishra',
     },
     {
       quote: 'Professional installation and great product quality.',
-      name: 'Mahesh P.'
+      name: 'Mahesh Kumar Singh'
     }
   ]
   return (

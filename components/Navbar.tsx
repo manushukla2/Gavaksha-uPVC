@@ -11,13 +11,13 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <Image
             src="/images/logo.png"
-            alt="Gavaksha uPVC logo"
+            alt="Gavaksha uPVC doors and Windows logo"
             width={120}
             height={40}
             priority
             className="h-8 md:h-9 w-auto object-contain"
           />
-          <span>Gavaksha uPVC</span>
+          <span>Gavaksha uPVC doors and Windows</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           <Link href="/" className="hover:text-brand-blue">Home</Link>
@@ -25,7 +25,16 @@ export function Navbar() {
           <Link href="/products" className="hover:text-brand-blue">Products</Link>
           <Link href="/contact" className="hover:text-brand-blue">Contact</Link>
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <a
+            href="https://share.google/AWtZVaE1UxK81ASLM"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary"
+            aria-label="Open Google reviews in a new tab"
+          >
+            Reviews
+          </a>
           <Link href="/contact" className="btn-primary">Get a Quote</Link>
         </div>
         <button className="md:hidden" onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
@@ -39,6 +48,15 @@ export function Navbar() {
             <Link href="/about" onClick={() => setOpen(false)} className="block">About Us</Link>
             <Link href="/products" onClick={() => setOpen(false)} className="block">Products</Link>
             <Link href="/contact" onClick={() => setOpen(false)} className="block">Contact</Link>
+            <a
+              href="https://share.google/AWtZVaE1UxK81ASLM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary w-full text-center"
+              onClick={() => setOpen(false)}
+            >
+              Reviews
+            </a>
             <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary w-full text-center">Get a Quote</Link>
           </div>
         </div>

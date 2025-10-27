@@ -46,6 +46,7 @@ export default function HomePage() {
       </section>
       <FeatureIcons />
       <Testimonials />
+      {/* Reviews button moved to Navbar and Footer as requested */}
       <CTASection />
     </>
   )
